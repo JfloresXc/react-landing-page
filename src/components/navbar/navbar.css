@@ -1,0 +1,139 @@
+.navbar,
+.navbar__list-down,
+.navbar__list-up,
+.navbar__brand{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar__checkbox-hide,
+.navbar__label-hide{
+    display: none;
+}
+
+.navbar{
+    box-shadow: 0px 1px 0px #E5E9F2;
+    transition: all ease 1s;
+}
+
+.navbar__brand{
+    justify-content: flex-start;
+    align-items: center;
+    /* line-height: 1.25em; */
+}
+
+.navbar__list-down{
+    max-width: 16.8em;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar__list-up{
+    justify-content: flex-end;
+}
+
+.navbar__list-item{
+    max-width: 6em;
+    flex-grow: 1;
+    text-align: center;
+    padding: .5em 0;
+}
+
+.navbar__link{
+    font-weight: 500;
+    font-size: var(--font-body-2);
+    color: #18191F;
+}
+
+/* Modifiers */
+.navbar-gray{
+    padding: 1em var(--margin-w);
+    background: var(--color-gray-500);
+}
+
+.navbar-gray .navbar__list-down{
+    gap: 0.625em;
+}
+
+.navbar-light{
+    padding: 1.375em var(--margin-w);
+    background: var(--color-white);
+}
+
+.navbar-light .navbar__list-up{
+    justify-content: flex-start;
+}
+
+.navbar__link-brand{
+    font-weight: 700;
+}
+
+.navbar__list-item:hover{
+    background: var(--color-purple-800);
+}
+
+.navbar__list-item:hover .navbar__link{
+    color: var(--color-white);
+}
+
+/* MEDIAQUERIES */
+@media screen and (max-width: 800px) {
+    .navbar{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    
+    .navbar__list-up{
+        justify-content: space-between;
+        padding: 1em var(--margin-w);
+    }
+
+    .navbar__list-down{
+        display: none;
+        background: var(--color-red);
+    }
+
+    .navbar__list-item{
+        padding: 1.5em var(--margin-w);
+        box-shadow: 0px 1px 0px #E5E9F2;
+        width: 100%;
+    }
+
+    .navbar__link{
+        font-size: var(--font-h6);
+        color: var(--color-gray-900);
+    }
+
+    .navbar__label-hide{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar__label-hide i{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: var(--color-gray-800);
+    }
+
+    .navbar__list-down-visible{
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        left: 0;
+    }
+
+    /* MODIFIERS */
+    .navbar-light{
+        flex-direction: column;
+    }
+
+    .navbar-light .navbar__list-up{
+        justify-content: space-between;
+    }
+
+    .navbar-light .navbar__list-down{
+        background: var(--color-orange-800);
+    }
+  }

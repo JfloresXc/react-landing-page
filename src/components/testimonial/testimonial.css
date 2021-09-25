@@ -1,0 +1,29 @@
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 41.4375em;
+    background: var(--color-gray-100);
+    padding: 4em var(--margin-w);
+}
+
+.testimonial__heading{
+    text-align: center;
+    color: var(--color-gray-900);
+}
+
+.testimonial__slider{
+    gap: 1.25em;
+}
+
+.testimonial__title{
+    margin: 0;
+    padding-bottom: .5em;
+    font-size: var(--font-h2);
+}
+
+.testimonial__description{
+    font-size: var(--font-lead-1);
+    padding-bottom: .5em;
+}
+

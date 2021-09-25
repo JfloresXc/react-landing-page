@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --margin-w: 10em;
+
+  --color-gray-100: #F4F5F7;
+  --color-gray-300: #D9DBE1;
+  --color-gray-500: #EEEFF4;
+  --color-gray-600: #D7D8DE;
+  --color-gray-700: #969BAB;
+  --color-gray-800: #474A57;
+  --color-gray-900: #18191F;
+  --color-black-900: #0B0D17;
+  --color-purple: #8C30F5;
+  --color-purple-800: #D6B1FF;
+  --color-purple-900: #F1E4FF;
+  --color-white: #FFFFFF;
+  --color-turquoise: #2EC5CE;
+  --color-turquoise-100: #D5FAFC;
+  --color-turquoise-800: #75E3EA;
+  --color-orange: #FE9A22;
+  --color-orange-800: #FFC278;
+  --color-red: #F39F9F;
+
+  --font-h1: 4.5em;
+  --font-h2: 3em;
+  --font-h3: 2.5em;
+  --font-h4: 1.75em;
+  --font-h5: 1.5em;
+  --font-h6: 1.25em;
+  --font-body-1: 1em;
+  --font-body-2: 0.875em;
+  --font-lead-1: 1.125em;
+  --font-label-small: 0.75rem;
+
+  --weight-500: 500;
+
+  --line-h-text: 1.5em;
+}
+
+body{
+  font-size: 16px;
+}
+
+.App-logo {
+  height: 40vmin;
+  background: red;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1060px) {
+  body{
+    font-size: 14px;
+    transition: all ease 1s;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    --margin-w: 6em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --margin-w: 4em;
+  }
+
+  body{
+    font-size: 12px;
+  }
+}
+
+
